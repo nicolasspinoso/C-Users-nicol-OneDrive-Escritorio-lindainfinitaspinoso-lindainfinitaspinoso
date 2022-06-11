@@ -28,6 +28,7 @@
     text-align: center;
     background-color: black;
     color: azure;
+    
 
 }
 
@@ -60,6 +61,7 @@
     margin: 10px;
     text-shadow: 2px 2px 2px #333;
     color: black
+
    
 }
 
@@ -309,3 +311,41 @@
 }
 
 /**------animacion--------**/
+.header div p{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .ofertas h2{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+.nav-contenedor nav ul li a:hover{
+    background-color: red;
+}
