@@ -18,9 +18,11 @@
 
 /*-------------------HEADER----------------------*/
 
+
 .header {
     width: 100%;
     grid-area: header;
+
    
 }
 
@@ -112,17 +114,21 @@
     background-color: black;
     color: white;
     font-weight: 900;
+    margin-bottom: 20px;
     height: 440px;
     border: 2px solid black;
     border-radius: 15px;
     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
 }
 
+.ofertas div div p{
+    margin-bottom: -5px;
+}
+
 .ofertas div div a {
     background-color: white;
     border-radius: 10px;
     color: black;
-    margin-top: 20px;
     text-decoration: none;
 }
 
@@ -214,8 +220,11 @@
     border: 2px solid black;
     border-radius: 15px;
     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
 }
-
+.galeriadeproductos div div p{
+    margin-bottom: -5px;
+}
 .galeriadeproductos div div a {
     background-color: white;
     border-radius: 10px;
@@ -310,6 +319,8 @@
 
 }
 
+
+
 /**------animacion--------**/
 .header div p{
     animation-duration: 3s;
@@ -349,3 +360,5 @@
 .nav-contenedor nav ul li a:hover{
     background-color: red;
 }
+
+
