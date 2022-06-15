@@ -28,10 +28,8 @@
 
 .header div p {
     text-align: center;
-    background-color: black;
+    background-color:black;
     color: azure;
-    
-
 }
 
 .nav-contenedor {
@@ -130,6 +128,7 @@
     border-radius: 10px;
     color: black;
     text-decoration: none;
+    padding: 5px;
 }
 
 .ofertas div div img {
@@ -185,11 +184,13 @@
     text-transform: uppercase;
 }
 
+
 /*** productos***/
 .productos {
     background-color: grey;
     font-size: larger;
     grid-area: main;
+    
 
 }
 
@@ -223,7 +224,7 @@
     margin-bottom: 20px;
 }
 .galeriadeproductos div div p{
-    margin-bottom: -5px;
+    margin-bottom: -8px;
 }
 .galeriadeproductos div div a {
     background-color: white;
@@ -231,6 +232,7 @@
     color: black;
     margin-top: 20px;
     text-decoration: none;
+    padding: 5px;
 }
 
 .galeriadeproductos div div img {
@@ -322,27 +324,12 @@
 
 
 /**------animacion--------**/
-.header div p{
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-  }
+
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
   .ofertas h2{
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
   }
   
   @keyframes slidein {
