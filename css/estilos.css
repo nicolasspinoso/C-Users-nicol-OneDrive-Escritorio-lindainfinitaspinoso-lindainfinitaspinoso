@@ -23,12 +23,12 @@
     width: 100%;
     grid-area: header;
 
-   
+
 }
 
 .header div p {
     text-align: center;
-    background-color:black;
+    background-color: black;
     color: azure;
 }
 
@@ -61,9 +61,16 @@
     margin: 10px;
     text-shadow: 2px 2px 2px #333;
     color: black
-
-   
 }
+
+.collapse ul li a {
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #333;
+    color: black
+}
+
 
 /*---------------------MAIN---------------------*/
 
@@ -77,8 +84,8 @@
     background-color: black;
     color: azure;
     text-transform: uppercase;
-  
-   
+
+
 }
 
 .hero_one>div img {
@@ -119,7 +126,7 @@
     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
 }
 
-.ofertas div div p{
+.ofertas div div p {
     margin-bottom: -5px;
 }
 
@@ -190,7 +197,7 @@
     background-color: grey;
     font-size: larger;
     grid-area: main;
-    
+
 
 }
 
@@ -204,7 +211,7 @@
 
 .galeriadeproductos>div {
     text-align: center;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px;
 }
@@ -223,16 +230,18 @@
     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
     margin-bottom: 20px;
 }
-.galeriadeproductos div div p{
+
+.galeriadeproductos div div p {
     margin-bottom: -8px;
 }
+
 .galeriadeproductos div div a {
     background-color: white;
     border-radius: 10px;
     color: black;
     margin-top: 20px;
     text-decoration: none;
-    padding: 5px;
+
 }
 
 .galeriadeproductos div div img {
@@ -254,7 +263,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 5px;
-   
+
 }
 
 .redes img {
@@ -266,9 +275,10 @@
     display: flex;
 }
 
-.redes div div a{
-    color:#333
+.redes div div a {
+    color: #333
 }
+
 .redes div div a img {
     width: 50px;
     height: 50px;
@@ -277,7 +287,7 @@
 
 .redes ul {
     list-style: none;
-    
+
 }
 
 .redes ul li a {
@@ -287,7 +297,7 @@
     margin: 10px;
     text-shadow: 2px 2px 2px #333;
     text-align: center;
-   
+
 }
 
 /*----------------------Media Queries-----------------*/
@@ -323,29 +333,37 @@
 
 
 
+
 /**------animacion--------**/
 
-  
-  .ofertas h2{
+.header p {
+    animation-duration: 5s;
+    animation-name: slidein;
+
+}
+
+.ofertas h2 {
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: 1;
-  }
-  
-  @keyframes slidein {
+
+}
+
+@keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%
+        margin-left: 100%;
+        width: 300%
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
-  
-.nav-contenedor nav ul li a:hover{
+}
+
+.nav-contenedor nav ul li a:hover {
     background-color: red;
 }
 
-
+.collapse ul li a:hover {
+    background-color: red;
+}
