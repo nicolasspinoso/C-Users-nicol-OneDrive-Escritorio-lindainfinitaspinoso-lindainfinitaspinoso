@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+
 }
+
 
 .gridcontenedor {
     display: grid;
@@ -26,41 +29,10 @@
 
 }
 
-.header div p {
+.texto_inicial{
     text-align: center;
     background-color: black;
     color: azure;
-}
-
-.nav-contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: black;
-
-}
-
-.nav-contenedor img {
-    width: 150px;
-    margin: 5px;
-}
-
-.nav-contenedor nav ul {
-    display: flex;
-    list-style: none;
-
-}
-
-
-
-.nav-contenedor nav ul li a {
-    text-decoration: none;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 10px;
-    text-shadow: 2px 2px 2px #333;
-    color: black
 }
 
 .collapse ul li a {
@@ -126,21 +98,18 @@
     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
 }
 
-.ofertas div div p {
-    margin-bottom: -5px;
-}
 
 .ofertas div div a {
     background-color: white;
     border-radius: 10px;
     color: black;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 .ofertas div div img {
     width: 300px;
-    height: 350px;
+    height: 320px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -189,7 +158,22 @@
     background-color: black;
     color: azure;
     text-transform: uppercase;
+
 }
+.preguntasfrecuentes p{
+    color:black;
+    text-transform: lowercase;
+
+}
+
+
+
+.preguntasfrecuentes p:first-letter {
+
+    text-transform: uppercase;
+
+}
+
 
 
 /*** productos***/
@@ -231,9 +215,8 @@
     margin-bottom: 20px;
 }
 
-.galeriadeproductos div div p {
-    margin-bottom: -8px;
-}
+
+
 
 .galeriadeproductos div div a {
     background-color: white;
@@ -241,12 +224,13 @@
     color: black;
     margin-top: 20px;
     text-decoration: none;
+    padding:5px;
 
 }
 
 .galeriadeproductos div div img {
     width: 300px;
-    height: 350px;
+    height:320px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -336,7 +320,7 @@
 
 /**------animacion--------**/
 
-.header p {
+.texto_inicial {
     animation-duration: 5s;
     animation-name: slidein;
 
@@ -358,10 +342,6 @@
         margin-left: 0%;
         width: 100%;
     }
-}
-
-.nav-contenedor nav ul li a:hover {
-    background-color: red;
 }
 
 .collapse ul li a:hover {
