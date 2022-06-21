@@ -1,0 +1,31 @@
+
+
+.header{
+    width: 100%;
+    grid-area: header;
+    .texto_inicial{
+             text-align: center;
+            background-color: $color-secundario;
+            color: $color-principal;
+        }
+
+    
+    .collapse{
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 2px $color-cuarto;
+                    color:$color-secundario;
+                    &:hover{
+                        background-color: red;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
