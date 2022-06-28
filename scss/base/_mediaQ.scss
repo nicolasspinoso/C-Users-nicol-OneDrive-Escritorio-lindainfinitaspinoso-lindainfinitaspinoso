@@ -1,0 +1,27 @@
+@media screen and (max-width: 673px) {
+    .nav-contenedor {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .nav-contenedor nav ul {
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .contacto {
+        text-align: center;
+    }
+
+    .preguntasfrecuentes {
+        font-size: medium;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    .redes>div {
+        flex-direction: column;
+    }
+
+
+}

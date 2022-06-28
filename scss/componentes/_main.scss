@@ -24,25 +24,19 @@
                 text-align: center;
                 font-size: xx-large;
                 background-color: $color-secundario;
-                color:$color-principal;
+                color: map-get($map: $pallets, $key: color-principal);
                 text-transform: uppercase;
     
             }
-            div{
+            >div{
                 display: flex;
                 text-align: center;
                 justify-content: space-around;
                 flex-wrap: wrap;
                 margin: 5px 10px 0 20px;
                     
-                }
                 div{
-                    display: flex;
-                }
-            }
-            div{
-                div{
-                    background-color:$color-secundario;
+                    background-color: map-get($map:$pallets , $key: color-secundario);
                     color: $color-principal;
                     font-weight: 900;
                     margin-bottom: 20px;
@@ -50,7 +44,7 @@
                     border: 2px solid $color-secundario;
                     border-radius: 15px;
                     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
-                    a {
+                    .boton{
                         background-color: $color-principal;
                         border-radius: 10px;
                         color: $color-secundario;
@@ -66,6 +60,8 @@
                 }
             }
         }
+
+    }
 
 
 
@@ -112,7 +108,20 @@
         text-transform: uppercase;
 
     }
+    .texto_uno{
+        background-color:$color-secundario;
+        color: $color-principal;
 
+    }
+    .texto_dos{
+        @extend .texto_uno;
+        background-color: slategrey;
+    
+    }
+    .texto_tres{
+        @extend .texto_uno
+    }
+    
 }
 
 .productos{
@@ -135,42 +144,39 @@
             flex-wrap: wrap;
             margin-top: 10px;
             }
-            div{
+           
+            >div{
                 display: flex;
-            }
-        div{
-            div{
-            background-color: $color-secundario;
-            color:$color-principal;
-            font-weight: 900;
-            height: 440px;
-            border: 2px solid black;
-            border-radius: 15px;
-            box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
-            margin-bottom: 20px;
-            
-
-            a{
-                background-color: $color-principal;
-                border-radius: 10px;
-                color: $color-secundario;
-                margin-top: 20px;
-                text-decoration: none;
-                padding:5px;
+                text-align: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: 5px 10px 0 20px;
+                    
+                div{
+                    background-color:$color-secundario;
+                    color: $color-principal;
+                    font-weight: 900;
+                    margin-bottom: 20px;
+                    height: 440px;
+                    border: 2px solid $color-secundario;
+                    border-radius: 15px;
+                    box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
+                    a {
+                        
+                     @include  colorboton 
+                        
+                    }
+                    img{
+                        width: 300px;
+                        height: 320px;
+                        border-radius: 15px 15px 0 0;
+    
+                    }
                 }
-            img{
-                width: 300px;
-                 height:320px;
-                border-radius: 15px 15px 0 0;
-            } 
-
             }
         }
 
     }
-
-
-}
 
 
     
