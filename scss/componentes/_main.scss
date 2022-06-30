@@ -1,4 +1,5 @@
 
+/*----MAIN-----*/
 .mainindex{
     grid-area: main;
     h1{
@@ -34,6 +35,12 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 margin: 5px 10px 0 20px;
+                animation-duration: 1s;
+                animation-name: transition;
+                &:hover{
+                    ;
+
+                }
                     
                 div{
                     background-color: map-get($map:$pallets , $key: color-secundario);
@@ -44,6 +51,12 @@
                     border: 2px solid $color-secundario;
                     border-radius: 15px;
                     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
+                    animation-duration: 1s;
+                    animation-name: transition;
+                    &:hover{
+                    transform: scale(1.1)
+                    ;
+                    }
                     .boton{
                         background-color: $color-principal;
                         border-radius: 10px;
@@ -83,6 +96,7 @@
     }
 }
 
+
 .contacto{
     background-color: $color-terceario;
     font-size: larger;
@@ -96,6 +110,7 @@
         text-transform: uppercase;
     }
 }
+
 
 .preguntasfrecuentes{
     background-color:$color-terceario;
@@ -115,7 +130,7 @@
     }
     .texto_dos{
         @extend .texto_uno;
-        background-color: slategrey;
+       
     
     }
     .texto_tres{
@@ -123,6 +138,8 @@
     }
     
 }
+
+
 
 .productos{
     background-color:$color-terceario;
@@ -136,6 +153,7 @@
         text-transform: uppercase;
 
     }
+    
     .galeriadeproductos{
 
         div{
@@ -161,6 +179,12 @@
                     border: 2px solid $color-secundario;
                     border-radius: 15px;
                     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
+                    animation-duration: 1s;
+                    animation-name: transition;
+                    &:hover{
+                    transform: scale(1.1)
+                    ;
+                    }
                     a {
                         
                      @include  colorboton 
@@ -175,8 +199,8 @@
                 }
             }
         }
+   }
 
-    }
 
 
     

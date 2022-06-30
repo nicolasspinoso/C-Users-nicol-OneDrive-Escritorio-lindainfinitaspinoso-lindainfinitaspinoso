@@ -1,5 +1,5 @@
 
-
+/*-----HEADER-----*/
 .header{
     width: 100%;
     grid-area: header;
@@ -7,6 +7,19 @@
              text-align: center;
             background-color: $color-secundario;
             color: $color-principal;
+            animation-duration: 5s;
+            animation-name: slidein;
+        }
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%
+            }
+        
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
         }
 
     

@@ -13,8 +13,6 @@
   grid-template-areas: "header header" "main  main" "footer footer";
 }
 
-/* mixin*/
-/*maps*/
 @media screen and (max-width: 673px) {
   .nav-contenedor {
     flex-direction: column;
@@ -39,6 +37,7 @@
     flex-direction: column;
   }
 }
+/*-----HEADER-----*/
 .header {
   width: 100%;
   grid-area: header;
@@ -47,6 +46,30 @@
   text-align: center;
   background-color: black;
   color: white;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .header .collapse ul li a {
   text-decoration: none;
@@ -59,6 +82,7 @@
   background-color: red;
 }
 
+/*----MAIN-----*/
 .mainindex {
   grid-area: main;
 }
@@ -85,6 +109,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 5px 10px 0 20px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: transition;
+          animation-name: transition;
 }
 .mainindex .ofertas > div div {
   background-color: black;
@@ -95,6 +123,13 @@
   border: 2px solid black;
   border-radius: 15px;
   box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: transition;
+          animation-name: transition;
+}
+.mainindex .ofertas > div div:hover {
+  transform: scale(1.1);
 }
 .mainindex .ofertas > div div .boton {
   background-color: white;
@@ -150,9 +185,6 @@
   background-color: black;
   color: white;
 }
-.preguntasfrecuentes .texto_dos {
-  background-color: slategrey;
-}
 .productos {
   background-color: grey;
   font-size: larger;
@@ -186,6 +218,13 @@
   border: 2px solid black;
   border-radius: 15px;
   box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: transition;
+          animation-name: transition;
+}
+.productos .galeriadeproductos > div div:hover {
+  transform: scale(1.1);
 }
 .productos .galeriadeproductos > div div a {
   background-color: rgb(236, 84, 84);
@@ -200,6 +239,7 @@
   border-radius: 15px 15px 0 0;
 }
 
+/*----FOOTER----*/
 .redes {
   background-color: white;
   grid-area: footer;
