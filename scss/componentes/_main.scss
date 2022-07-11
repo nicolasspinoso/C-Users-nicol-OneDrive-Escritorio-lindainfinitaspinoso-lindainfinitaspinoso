@@ -51,8 +51,7 @@
                     border: 2px solid $color-secundario;
                     border-radius: 15px;
                     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
-                    animation-duration: 1s;
-                    animation-name: transition;
+                    transition: 1s;
                     &:hover{
                     transform: scale(1.1)
                     ;
@@ -134,9 +133,17 @@
     
     }
     .texto_tres{
-        @extend .texto_uno
+        @extend .texto_uno;
     }
-    
+    .texto_cuatro{
+        @extend .texto_uno;
+    }
+    .texto_cinco{
+        @extend .texto_uno;
+    }
+    .texto_seis{
+        @extend .texto_uno;
+    }
 }
 
 
@@ -180,7 +187,7 @@
                     border-radius: 15px;
                     box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
                     animation-duration: 1s;
-                    animation-name: transition;
+                     transition: 1s;
                     &:hover{
                     transform: scale(1.1)
                     ;

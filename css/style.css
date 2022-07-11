@@ -123,10 +123,7 @@
   border: 2px solid black;
   border-radius: 15px;
   box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: transition;
-          animation-name: transition;
+  transition: 1s;
 }
 .mainindex .ofertas > div div:hover {
   transform: scale(1.1);
@@ -181,7 +178,7 @@
   color: white;
   text-transform: uppercase;
 }
-.preguntasfrecuentes .texto_uno, .preguntasfrecuentes .texto_tres, .preguntasfrecuentes .texto_dos {
+.preguntasfrecuentes .texto_uno, .preguntasfrecuentes .texto_seis, .preguntasfrecuentes .texto_cinco, .preguntasfrecuentes .texto_cuatro, .preguntasfrecuentes .texto_tres, .preguntasfrecuentes .texto_dos {
   background-color: black;
   color: white;
 }
@@ -220,8 +217,7 @@
   box-shadow: 10px 10px 35px -8px rgba(0, 0, 0, 0.75);
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: transition;
-          animation-name: transition;
+  transition: 1s;
 }
 .productos .galeriadeproductos > div div:hover {
   transform: scale(1.1);
